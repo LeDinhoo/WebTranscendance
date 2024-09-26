@@ -5,7 +5,7 @@
   align-items: center;
   flex-direction: row;
   gap: var(--12px);
-  padding: var(--8px) var(--16px);
+  padding: var(--8px) var(--20px);
   border-radius: var(--radius-xlg);
 }
 
@@ -23,7 +23,7 @@
 }
 
 .navLabel {
-  font-size: var(--8px);
+  font-size: 0.621vw;
   font-weight: 600;
   color: var(--snow);
 }

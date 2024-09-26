@@ -13,5 +13,57 @@
     flex-direction: column;
     flex-grow: 1;
     background-color: var(--gluon-grey);
-    border-radius: var(--radius-xl);
+    border-radius: var(--radius-lg);
+    gap: var(--16px);
+    padding: var(--16px);
+}
+
+.game {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--dark-grey);
+    border-radius: var(--radius-lg);
+}
+
+.play {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--dark-grey);
+    border-radius: var(--radius-lg);
+    gap: var(--16px);
+    padding: var(--16px);
+}
+
+.playButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-color: var(--liquid-lava);
+    gap: var(--4px);
+    padding: var(--4px) var(--12px);
+    border-radius: var(--12px);
+    outline: none;
+    border: none;
+}
+
+.icon {
+    width: var(--icon-24);
+    height: var(--icon-24);
+}
+
+.playLabel {
+    font-size: var(--12px);
+    font-weight: 600;
+    color: var(--snow);
+    margin: 0;
+    padding: 0;
+    padding-right: var(--4px);
 }

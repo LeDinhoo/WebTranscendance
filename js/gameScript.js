@@ -36,7 +36,7 @@ let gameState = {
 
 // DOM Elements
 let gameElements = {
-    gameContainer: null,
+    gameSection: null,
     topPaddle: null,
     bottomPaddle: null,
     ball: null,
@@ -49,7 +49,7 @@ let gameElements = {
  * Cette fonction doit être appelée une fois au début du jeu pour configurer l'environnement initial.
  */
 function initializeGameElements() {
-    gameElements.gameContainer = document.getElementById('gameContainer');
+    gameElements.gameSection = document.getElementById('gameSection');
     gameElements.topPaddle = document.getElementById('topPaddle');
     gameElements.bottomPaddle = document.getElementById('bottomPaddle');
     gameElements.ball = document.getElementById('ball');
@@ -57,8 +57,8 @@ function initializeGameElements() {
     gameElements.scoreDisplay = document.getElementById('scoreDisplay');
 
     // Set dynamic game dimensions
-    gameState.gameWidth = gameElements.gameContainer.offsetWidth;
-    gameState.gameHeight = gameElements.gameContainer.offsetHeight;
+    gameState.gameWidth = gameElements.gameSection.offsetWidth;
+    gameState.gameHeight = gameElements.gameSection.offsetHeight;
 }
 
 /**
@@ -67,8 +67,8 @@ function initializeGameElements() {
  * et l'événement de redimensionnement de la fenêtre.
  */
 function setupEventListeners() {
-    gameElements.gameContainer.addEventListener('mouseenter', () => gameState.isMouseInGame = true);
-    gameElements.gameContainer.addEventListener('mouseleave', () => gameState.isMouseInGame = false);
+    gameElements.gameSection.addEventListener('mouseenter', () => gameState.isMouseInGame = true);
+    gameElements.gameSection.addEventListener('mouseleave', () => gameState.isMouseInGame = false);
     document.addEventListener('keydown', handleKeyDown);
     document.addEventListener('keyup', handleKeyUp);
     window.addEventListener('resize', handleResize);
@@ -79,8 +79,8 @@ function setupEventListeners() {
  * Cette fonction assure que le jeu s'adapte correctement aux changements de taille de l'écran.
  */
 function handleResize() {
-    gameState.gameWidth = gameElements.gameContainer.offsetWidth;
-    gameState.gameHeight = gameElements.gameContainer.offsetHeight;
+    gameState.gameWidth = gameElements.gameSection.offsetWidth;
+    gameState.gameHeight = gameElements.gameSection.offsetHeight;
     resetBall();
 }
 

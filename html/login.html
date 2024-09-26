@@ -4,122 +4,51 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mon Projet Bootstrap</title>
-    <link
-      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
-      rel="stylesheet"
-    />
-    <link href="styles.css" rel="stylesheet" />
+    <link href="/css/global.css" rel="stylesheet" />
+    <link href="/css/login.css" rel="stylesheet" />
   </head>
   <body>
-    <!-- Section de Login -->
-    <div id="loginSection" class="container-fluid h-100">
-      <div class="row h-100">
-        <div class="col-md-7 left-column" id="gameContainer">
-          <div id="topPaddle" class="paddle"></div>
-          <div id="bottomPaddle" class="paddle"></div>
-          <div id="ball"></div>
-          <div id="centerLine"></div>
-          <div
-            id="speedDisplay"
-            style="
-              position: absolute;
-              bottom: 10px;
-              right: 10px;
-              color: white;
-              opacity: 0;
-            "
-          ></div>
-          <div
-            id="scoreDisplay"
-            style="
-              position: absolute;
-              bottom: 10px;
-              left: 10px;
-              font-size: 24px;
-              color: white;
-              z-index: 10;
-            "
-          >
-            0 - 0
+    <div class="main">
+      <div id="gameSection" class="gameSection">
+        <div id="topPaddle" class="paddle"></div>
+        <div id="bottomPaddle" class="paddle"></div>
+        <div id="ball"></div>
+        <div id="centerLine"></div>
+        <div id="speedDisplay"></div>
+        <div id="scoreDisplay">0 - 0</div>
+      </div>
+      <div class="loginSection">
+        <form class="loginWidget">
+          <h2 id="loginTitle">Join the Battle</h2>
+          <div class="formInputFrame">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="inputFrame"
+              placeholder=" "
+              required
+            />
+            <label for="password" class="inputLabel">E-mail</label>
           </div>
-        </div>
-        <div class="col right-column">
-          <div class="login-zone p-4">
-            <h2 id="myText">Join the Battle</h2>
-            <form id="loginForm" class="form-container">
-              <div id="userNameInput" class="form-group">
-                <input
-                  type="text"
-                  id="username"
-                  name="username"
-                  class="form-control"
-                  placeholder=" "
-                  required
-                />
-                <label for="username" class="form-label">Username</label>
-              </div>
-              <div class="form-group">
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  class="form-control"
-                  placeholder=" "
-                  required
-                />
-                <label for="email" class="form-label">E-mail</label>
-              </div>
-              <div class="form-group">
-                <input
-                  type="password"
-                  id="password"
-                  name="password"
-                  class="form-control"
-                  placeholder=" "
-                  required
-                />
-                <label for="password" class="form-label">Password</label>
-              </div>
-              <div id="confirmPassword" class="form-group">
-                <input
-                  type="password"
-                  id="password"
-                  name="confirmPassword"
-                  class="form-control"
-                  placeholder=" "
-                  required
-                />
-                <label for="password" class="form-label">Password</label>
-              </div>
-              <button id="loginSubmit" type="submit" class="login-btn">
-                Log In
-              </button>
-              <button id="registerSubmit" type="submit" class="login-btn">
-                Register
-              </button>
-            </form>
-            <hr />
-
-            <button id="registerChoice" type="button" class="register-btn">
-              Register
-            </button>
-            <button id="signInChoice" type="button" class="register-btn">
-              Sign Up
-            </button>
+          <div class="formInputFrame">
+            <input
+              type="password"
+              id="password"
+              name="password"
+              class="inputFrame"
+              placeholder=" "
+              required
+            />
+            <label for="password" class="inputLabel">Password</label>
           </div>
-        </div>
+          <button class="loginWidgetButton">Log In</button>
+          <hr />
+          <button class="registerWidgetButton">Register</button>
+        </form>
       </div>
     </div>
-    <!-- Section de Jeu -->
-    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-    <script src="jumpLetter.js"></script>
-    <script src="gameScript.js"></script>
-    <script src="singleApp.js"></script>
-    <script src="registerShowHide.js"></script>
+    <script src="/js/gameScript.js"></script>
+    <script src="/js/jumpLetter.js"></script>
   </body>
 </html>

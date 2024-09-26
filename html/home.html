@@ -9,7 +9,7 @@
     <link href="/css/header.css" rel="stylesheet" />
   </head>
   <body>
-    <div class="main">
+    <main>
       <div class="headerMenuSection">
         <div class="headerNavBar">
           <div class="iconMenu">
@@ -38,9 +38,16 @@
           </div>
         </div>
       </div>
-      <div class="GameSection">homeGameSection</div>
-      <div class="playButton">PlayButton</div>
-    </div>
+      <div class="GameSection">
+        <div class="game"></div>
+        <div class="play">
+          <button class="playButton">
+            <img class="icon" src="/assets/icons/play.svg" />
+            <div class="playLabel">PLAY</div>
+          </button>
+        </div>
+      </div>
+    </main>
     <script src="/js/navBar.js"></script>
   </body>
 </html>
