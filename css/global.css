@@ -15,15 +15,18 @@
 
 /* Variables pour les vw a partir des pixels*/
 :root {
-    --2px: 0.139vw;
-    --4px: 0.278vw;
-    --8px: 0.556vw;
-    --12px: 0.833vw;
-    --16px: 1.111vw;
-    --20px: 1.389vw;
-    --24px: 1.667vw;
-    --28px: 1.944vw;
-    --32px: 2.222vw;
+    --2px: 0.104vw;
+    --4px: 0.208vw;
+    --8px: 0.417vw;
+    --12px: 0.625vw;
+    --16px: 0.833vw;
+    --20px: 1.042vw;
+    --24px: 1.25vw;
+    --28px: 1.458vw;
+    --32px: 1.667vw;
+    --36px: 1.875vw;
+    --40px: 2.083vw;
+    --44px: 2.292vw;
 }
 
 /* Variables pour les borders radius */
@@ -69,7 +72,7 @@ body {
     box-sizing: border-box;
 }
 
-main {
+.main {
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -77,3 +80,34 @@ main {
     align-items: center;
     gap: var(--16px);
 }
+
+.btn-icon {
+    display: inline-flex;
+    align-items: center;
+    padding: var(--8px) var(--16px);
+    background-color: var(--snow);
+    border: var(--snow) solid var(--4px);
+    border-radius: var(--20px);
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border 0.3s;
+    font-size: var(--16px);
+    font-weight: 600;
+    gap: var(--8px);
+  }
+  
+  .btn-icon:hover {
+    background-color: var(--liquid-lava);
+    border: var(--liquid-lava) solid var(--4px);
+    color: var(--snow);
+  }
+
+  .btn-icon:active {
+    transition: border 0s;
+    border: var(--snow) solid var(--4px);
+  }
+  
+  .btn-icon svg {
+    width: var(--32px);
+    height: var(--32px);
+    fill: currentColor;
+  }

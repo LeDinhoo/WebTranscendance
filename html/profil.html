@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mon Projet Bootstrap</title>
     <link href="/css/global.css" rel="stylesheet" />
-    <link href="/css/home.css" rel="stylesheet" />
     <link href="/css/header.css" rel="stylesheet" />
+    <link href="/css/profil.css" rel="stylesheet" />
   </head>
   <body>
     <div class="main">
@@ -38,16 +38,38 @@
           </div>
         </div>
       </div>
-      <div class="GameSection">
-        <div class="game"></div>
-        <div class="play">
-          <button class="playButton">
-            <img class="icon" src="/assets/icons/play.svg" />
-            <div class="playLabel">PLAY</div>
-          </button>
+      <div class="profilSection">
+        <div class="accountSection">
+          <div class="avatarSection">
+            <div class="playerProfilFrame">
+              <div class="avatarFrame">
+                <img class="avatarImg" src="/assets/avatars/clown-fish.png" />
+              </div>
+              <div class="playerFrame">Nickname</div>
+            </div>
+            <button class="btn-icon">
+              <svg>
+                <use href="/assets/icons/sprite.svg#upload"></use>
+              </svg>
+              Upload
+            </button>
+            <button class="btn-icon">
+              <svg>
+                <use href="/assets/icons/sprite.svg#slider"></use>
+              </svg>
+              Avatar
+            </button>
+          </div>
+          <div class="manageProfilSection">
+            <div class="informationSection"></div>
+            <div class="friendSection"></div>
+          </div>
+        </div>
+        <div class="matchSection">
+          <div class="matchHistory"></div>
+          <div class="matchStats"></div>
         </div>
       </div>
     </div>
-    <script src="/js/navBar.js"></script>
   </body>
 </html>

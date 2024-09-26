@@ -1,16 +1,18 @@
+@import url(/css/global.css);
+
 .headerNavBar {
   background-color: var(--liquid-lava);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  gap: var(--12px);
-  padding: var(--8px) var(--20px);
-  border-radius: var(--radius-xlg);
+  gap: var(--16px);
+  padding: var(--8px) var(--24px);
+  border-radius: var(--24px);
 }
 
 .iconMenu {
-  width: var(--36px);
+  height: 2.656vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,12 +20,12 @@
 }
 
 .icon {
-  width: var(--icon-24);
-  height: var(--icon-24);
+  width: var(--36px);
+  height: var(--36px);
 }
 
 .navLabel {
-  font-size: 0.621vw;
-  font-weight: 600;
+  font-size: 0.625vw;
+  font-weight: 700;
   color: var(--snow);
 }

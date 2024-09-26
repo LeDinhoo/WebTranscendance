@@ -1,9 +1,7 @@
+@import url(/css/global.css);
+
 .main {
   flex-direction: row;
-  display: flex;
-  height: 100%;
-  justify-content: center;
-  align-items: center;
 }
 
 .loginSection {
@@ -12,20 +10,19 @@
   flex-grow: 1;
   justify-content: center;
   align-items: center;
-  border-radius: var(--radius-xlg);
 }
 
 .loginWidget {
-  width: 16.486vw;
+  width: 15.365vw;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: var(--20px);
+  gap: var(--24px);
 }
 
 h2 {
-  font-size: var(--24px);
+  font-size: var(--36px);
   color: var(--snow);
   padding: 0;
   margin: 0;
@@ -40,7 +37,7 @@ hr {
 
 .formInputFrame {
   width: 100%;
-  height: 2.625vw;
+  height: 2.344vw;
   display: flex;
   position: relative;
 }
@@ -50,10 +47,10 @@ hr {
   height: 100%;
   padding: var(--12px);
   border: #878787 var(--2px) solid;
-  border-radius: 1.042vw;
+  border-radius: var(--16px);
   background-color: transparent;
   color: #fbfbfb;
-  font-size: var(--12px);
+  font-size: var(--16px);
   box-shadow: none;
 }
 
@@ -66,7 +63,7 @@ hr {
 }
 
 .inputLabel {
-  font-size: var(--12px);
+  font-size: var(--16px);
   position: absolute;
   left: var(--16px);
   top: 50%;
@@ -85,20 +82,55 @@ hr {
   padding: var(--4px) var(--12px);
   background-color: #151419;
   color: #ff710d;
-  border-radius: var(--8px);
   font-weight: 700;
+}
+
+.otherChoiceFrame {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--16px);
 }
 
 .loginWidgetButton,
 .registerWidgetButton {
-  width: 100%;
-  height: 2.625vw;
+  flex-grow: 1;
+  height: 2.604vw;
   border-radius: 100px;
   border: none;
   cursor: pointer;
-  font-size: 1vw;
+  font-size: 0.938vw;
   background-color: var(--snow);
   color: var(--gluon-grey);
+}
+
+.fortyTwoWidgetButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2.604vw;
+  width: 2.604vw;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  color: var(--snow);
+  background-color: var(--dusty-grey);
+}
+
+.fortyTwoWidgetButton svg {
+  width: 1.563vw;
+  height: 1.563vw;
+  fill: currentColor;
+}
+
+.fortyTwoWidgetButton:hover {
+  background-color: var(--azur-blue);
+  transition: ease 0.15s;
+}
+
+.loginWidgetButton {
+  width: 100%;
 }
 
 .registerWidgetButton {
