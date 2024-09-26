@@ -53,5 +53,7 @@ function jumpLetters(elementId) {
   // Utilisation des fonctions
   document.addEventListener('DOMContentLoaded', () => {
     jumpLetters('loginTitle');
-    repeatAnimation('loginTitle', 10000); // Répète l'animation toutes les 5 secondes
+    repeatAnimation('loginTitle', 10000);
+    jumpLetters('registerTitle');
+    repeatAnimation('registerTitle', 10000);
   });
