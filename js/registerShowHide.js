@@ -2,18 +2,34 @@ const loginWidget = document.getElementById("loginWidget");
 const registerWidget = document.getElementById("registerWidget");
 const signUpButton = document.getElementById("signUpButton");
 const registerButton = document.getElementById("registerButton");
+const loginTitle = document.getElementById("loginTitle");
+const registerTitle = document.getElementById("registerTitle"); // Ajoutez cette ligne
 
-// Quand je clique sur register button le widget de login disparait et le widget de register apparait
+// Fonction pour ajouter l'effet de rebond
+function addBounceEffect(element) {
+  element.classList.add("bounce");
+  setTimeout(() => {
+    element.classList.remove("bounce");
+  }, 1000); // Durée de l'animation
+}
+
+function addReverseBounceEffect(element) {
+  element.classList.add("invertBounce");
+  setTimeout(() => {
+    element.classList.remove("invertBounce");
+  }, 1000); // Durée de l'animation
+}
+
 registerButton.addEventListener("click", () => {
   loginWidget.style.display = "none";
   registerWidget.style.display = "flex";
+  addBounceEffect(registerTitle);
 });
 
-// Quand je clique sur sign up button le widget de register disparait et le widget de login apparait
 signUpButton.addEventListener("click", () => {
   loginWidget.style.display = "flex";
   registerWidget.style.display = "none";
+  addReverseBounceEffect(loginTitle);
 });
 
-// De base c'est loginwidget qui est affiche
 registerWidget.style.display = "none";
