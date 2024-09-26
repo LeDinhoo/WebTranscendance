@@ -1,0 +1,17 @@
+.headerMenuSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.GameSection {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-grow: 1;
+    background-color: var(--gluon-grey);
+    border-radius: var(--radius-xl);
+}
