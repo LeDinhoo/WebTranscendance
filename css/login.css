@@ -35,56 +35,6 @@ hr {
   margin: 0;
 }
 
-.formInputFrame {
-  width: 100%;
-  height: 2.344vw;
-  display: flex;
-  position: relative;
-}
-
-.inputFrame {
-  width: 100%;
-  height: 100%;
-  padding: var(--12px);
-  border: #878787 var(--2px) solid;
-  border-radius: var(--16px);
-  background-color: transparent;
-  color: #fbfbfb;
-  font-size: var(--16px);
-  box-shadow: none;
-}
-
-.inputFrame:focus {
-  border: #ff710d var(--2px) solid;
-  background-color: transparent;
-  outline: none;
-  box-shadow: none; /* Supprime l'ombre de focus de Bootstrap */
-  color: #fbfbfb;
-}
-
-.inputLabel {
-  font-size: var(--16px);
-  position: absolute;
-  left: var(--16px);
-  top: 50%;
-  transform: translateY(-50%);
-  color: var(--snow);
-  transition: 0.3s;
-  pointer-events: none;
-  background-color: var(--dark-void);
-}
-
-.inputFrame:focus ~ .inputLabel,
-.inputFrame:not(:placeholder-shown) ~ .inputLabel {
-  top: 0;
-  transform: translateY(-50%) scale(0.8);
-  left: var(--8px);
-  padding: var(--4px) var(--12px);
-  background-color: #151419;
-  color: #ff710d;
-  font-weight: 700;
-}
-
 .otherChoiceFrame {
   width: 100%;
   display: flex;
@@ -148,14 +98,6 @@ hr {
   background-color: var(--azur-blue);
   color: #fbfbfb;
   transition: ease 0.15s;
-}
-
-.inputFrame:-webkit-autofill,
-.inputFrame:-webkit-autofill:hover,
-.inputFrame:-webkit-autofill:focus {
-  -webkit-text-fill-color: #fbfbfb;
-  -webkit-box-shadow: 0 0 0px 1000px var(--dark-void) inset;
-  transition: background-color 5000s ease-in-out 0s;
 }
 
 .gameSection {
