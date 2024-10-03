@@ -1,4 +1,4 @@
-@import url(/WebTranscendance/css/global.css);
+@import url(/css/global.css);
 
 .headerNavBar {
   background-color: var(--liquid-lava);
@@ -17,6 +17,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  cursor: pointer;
 }
 
 .icon {
@@ -24,8 +25,30 @@
   height: var(--36px);
 }
 
-.navLabel {
+/* .navLabel {
+  display: none;
   font-size: 0.625vw;
   font-weight: 700;
   color: var(--snow);
+  transition: all 1s ease;
 }
+
+.navLabel.active {
+  display: flex;
+} */
+
+.navLabel {
+  opacity: 0;
+  overflow: hidden;
+  transition: opacity 0.5s ease, max-height 0.5s ease;
+  font-size: 0.625vw;
+  font-weight: 700;
+  max-height: 0;
+  color: var(--snow);
+}
+
+.navLabel.active {
+  opacity: 1;
+  max-height: 1.5vw;
+}
+
