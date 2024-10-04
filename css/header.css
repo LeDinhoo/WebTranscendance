@@ -17,6 +17,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  cursor: pointer;
 }
 
 .icon {
@@ -28,4 +29,13 @@
   font-size: 0.625vw;
   font-weight: 700;
   color: var(--snow);
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 0.3s ease, max-height 0.3s ease;
+}
+
+.navLabel.active {
+  opacity: 1;
+  max-height: 50px; /* Ajustez cette valeur selon la hauteur maximale de vos labels */
 }
