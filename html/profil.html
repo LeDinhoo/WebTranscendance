@@ -89,28 +89,60 @@
                 <div class="formInputFrame">
                   <input
                     type="password"
-                    id="registerPassword"
-                    name="registerPassword"
+                    id="oldPassword"
+                    name="oldPassword"
                     class="inputFrame"
                     placeholder=" "
                     required
                   />
-                  <label for="registerPassword" class="inputLabel"
+                  <label for="oldPassword" class="inputLabel"
                     >Password</label
                   >
+                  <img
+                    id="toggleOldPassword"
+                    src="/assets/icons/vibility.png"
+                    alt="visibility"
+                    class="eyeIcon"
+                  />
+                  <button id="toggleChangePassword" class="btn-icon-change">Modify</button>
                 </div>
-                <div class="formInputFrame">
+                <div id="newFrame" class="formInputFrame">
                   <input
                     type="password"
-                    id="confirmPassword"
-                    name="confirmPassword"
+                    id="newPassword"
+                    name="newPassword"
                     class="inputFrame"
                     placeholder=" "
                     required
                   />
-                  <label for="confirmPassword" class="inputLabel"
-                    >Confirm Password</label
+                  <label for="newPassword" class="inputLabel"
+                    >New Password</label
                   >
+                  <img
+                    id="toggleNewPassword"
+                    src="/assets/icons/vibility.png"
+                    alt="visibility"
+                    class="eyeIcon"
+                  />
+                </div>
+                <div id="newPlusFrame" class="formInputFrame">
+                  <input
+                    type="password"
+                    id="confirmNewPassword"
+                    name="confirmNewPassword"
+                    class="inputFrame"
+                    placeholder=" "
+                    required
+                  />
+                  <label for="confirmNewPassword" class="inputLabel"
+                    >Confirm New Password</label
+                  >
+                  <img
+                    id="toggleConfirmNewPassword"
+                    src="/assets/icons/vibility.png"
+                    alt="visibility"
+                    class="eyeIcon"
+                  />
                 </div>
               </div>
               <div class="modifyButtonsFrame">
@@ -264,5 +296,6 @@
       </div>
     </div>
     <script src="/js/navBar.js"></script>
+    <script src="/js/vibilityPasswordProfil.js"></script>
   </body>
 </html>

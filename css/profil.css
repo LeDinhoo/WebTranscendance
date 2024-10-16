@@ -59,7 +59,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 2.708vw;
+  gap: 2vw;
   background-color: var(--dark-grey);
 }
 
@@ -139,7 +139,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: var(--32px);
+  gap: var(--16px);
   flex-direction: column;
   width: 15.625vw;
 }
