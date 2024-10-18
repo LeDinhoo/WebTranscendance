@@ -81,7 +81,8 @@ body {
   gap: var(--16px);
 }
 
-.btn-icon, .btn-icon-change {
+.btn-icon,
+.btn-icon-change {
   display: inline-flex;
   align-items: center;
   padding: var(--8px) var(--16px);

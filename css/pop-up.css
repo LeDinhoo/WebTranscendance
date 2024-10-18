@@ -1,0 +1,77 @@
+.borderFrame {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--dark-grey);
+  padding: var(--24px);
+  border-radius: var(--24px);
+  gap: 2vw;
+}
+
+.tournamentName {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--slate-grey);
+  padding: var(--24px);
+  border-radius: var(--24px);
+  gap: var(--12px);
+}
+
+.maxTournament {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--slate-grey);
+  padding: var(--24px);
+  border-radius: var(--24px);
+  gap: var(--12px);
+}
+
+.eightFrame {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--slate-grey);
+  padding: var(--24px);
+  border-radius: var(--24px);
+  gap: var(--16px);
+}
+
+.nameAndAvatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background-color: var(--slate-grey);
+  padding: 0;
+  gap: var(--12px);
+}
+
+.avatarFrame {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: var(--4px);
+  width: auto;
+  height: auto;
+  border: var(--2px) solid var(--dusty-grey);
+}
+
+.avatarImg {
+  width: 1.8vw;
+  height: 1.8vw;
+}
+
+.inputLabel {
+  background-color: var(--slate-grey);
+}
+
+.inputFrame:focus ~ .inputLabel,
+.inputFrame:not(:placeholder-shown) ~ .inputLabel {
+  background-color: var(--slate-grey);
+}
